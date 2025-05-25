@@ -106,6 +106,10 @@
   color: #111827;
 }
 
+.dark.active {
+  border: 2px solid gold;
+}
+
 .list-item.light.active {
   background-color: #d1d5db;
   color: #111827;
