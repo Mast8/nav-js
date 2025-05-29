@@ -123,4 +123,10 @@
   .list-item-text {
     display: none;
   }
+
+  .sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    
+  }
 }
