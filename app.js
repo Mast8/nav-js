@@ -21,6 +21,10 @@ night.addEventListener("click", () => {
     activeListItem.className = "list-item night active";
     
     //night.style.display = 'none';
+    const activeColor = document.querySelector(".color-box.night");
+    console.log(activeColor)
+    activeColor.className = "color-box night active";
+    console.log(activeColor.className)
     
 });
 

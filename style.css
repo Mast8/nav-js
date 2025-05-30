@@ -106,7 +106,7 @@
   color: #111827;
 }
 
-.dark.active {
+.dark.active, .night.active {
   border: 2px solid gold;
 }
 
