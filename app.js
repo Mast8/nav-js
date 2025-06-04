@@ -19,18 +19,31 @@ dark.addEventListener("click", () => {
 night.addEventListener("click", () => {
     sidebar.className = "sidebar night";
     activeListItem.className = "list-item night active";
+    activate("night");
+
     
     //night.style.display = 'none';
-    const activeColor = document.querySelector(".color-box.night");
-    console.log(activeColor)
-    activeColor.className = "color-box night active";
-    console.log(activeColor.className)
+    //const activeColor = document.querySelector(".color-box.night");
+    //onsole.log(activeColor)
+    //activeColor.className = "color-box night active";
+    //console.log(activeColor.className)
     
 });
 
 light.addEventListener("click", () => {
     sidebar.className = "sidebar light";
     activeListItem.className = "list-item light active";
-
+    activate("light");
 
 });
+
+function activate(color){
+    let name = ".color-box." + color;
+    const activeColor = document.querySelector(name);
+
+
+    //const activeColor = document.querySelector(".color-box.night");
+    console.log(activeColor)
+    activeColor.className = "color-box night active";
+
+}
