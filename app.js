@@ -7,12 +7,8 @@ const activeListItem = document.querySelector(".list-item.active");
 dark.addEventListener("click", () => {
     sidebar.className = "sidebar";
     activeListItem.className = "list-item active";
-
-    const activeColor = document.querySelector(".color-box.dark");
-    console.log(activeColor)
-    activeColor.className = "color-box dark active";
-    console.log(activeColor.className)
-    //dark.style.display = 'none';
+    activate("dark");
+    
 });
 
 
@@ -20,13 +16,6 @@ night.addEventListener("click", () => {
     sidebar.className = "sidebar night";
     activeListItem.className = "list-item night active";
     activate("night");
-
-    
-    //night.style.display = 'none';
-    //const activeColor = document.querySelector(".color-box.night");
-    //onsole.log(activeColor)
-    //activeColor.className = "color-box night active";
-    //console.log(activeColor.className)
     
 });
 
@@ -44,6 +33,9 @@ function activate(color){
 
     //const activeColor = document.querySelector(".color-box.night");
     console.log(activeColor)
-    activeColor.className = "color-box night active";
+    let namClass = "color-box " + color+" active";
+    activeColor.className = namClass;
+     console.log(namClass)
+    //activeColor.className = "color-box night active";
 
 }
