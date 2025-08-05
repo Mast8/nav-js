@@ -26,16 +26,19 @@ light.addEventListener("click", () => {
 
 });
 
+function removeActive(){
+
+}
+
 function activate(color){
     let name = ".color-box." + color;
     const activeColor = document.querySelector(name);
 
-
     //const activeColor = document.querySelector(".color-box.night");
     console.log(activeColor)
-    let namClass = "color-box " + color+" active";
+    let namClass = "color-box " + color +" active";
     activeColor.className = namClass;
-     console.log(namClass)
+    console.log(namClass)
     //activeColor.className = "color-box night active";
 
 }
